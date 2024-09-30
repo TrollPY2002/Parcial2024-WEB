@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shop Online</title>
+</head>
+<body>
+    <header>
+        <h1>Shop Online</h1>
+        <div class="search-bar">
+            <label for="search-input">Filtro de búsqueda:</label>
+            <input type="text" id="search-input" placeholder="Buscar productos..."> 
+            <button id="search-btn">Buscar</button>
+            <a href="cart.html">Carrito</a>
+            <a href="login.html">Salir</a>
+        </div>
+        <nav>
+            <ul id="categories-container"> 
+                <li data-category="electronics">Electronics</li>
+                <li data-category="jewelery">Jewelery</li>
+                <li data-category="men's clothing">Men's clothing</li>
+                <li data-category="women's clothing">Women's clothing</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Productos</h2>
+        <div id="products-container"></div> 
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos de la página de login y registro */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;  /* Establecemos un ancho máximo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;  /* Espaciado entre los elementos */
+    transition: height 0.3s ease;  /* Suavizar el crecimiento del contenedor */
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+form {
+    width: 100%;  /* Formulario ocupa todo el ancho disponible */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;  /* Espaciado entre los campos del formulario */
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;  /* Input ocupa todo el ancho disponible */
+}
+
+button {
+    background-color: #4A56E2;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3b45b8;
+}
+
+a {
+    text-decoration: none;
+    color: #4A56E2;
+    font-size: 0.9rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Añadimos margen superior al último enlace */
+.login-container a {
+    margin-top: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 1.5rem;
+    }
+
+    input, button {
+        font-size: 0.9rem;
+    }
+}
+/* General Reset */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Estilos del header */
+header {
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+/* Estilos de la barra de búsqueda */
+.search-bar {
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 5px;
+    width: 200px;
+}
+
+/* Estilos de la navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #eaeaea;
+    padding: 10px;
+}
+
+nav ul li:hover {
+    background-color: #ccc;
+}
+
+/* Estilos del contenedor principal */
+main {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+}
+
+/* Contenedor de productos */
+#products-container { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centrar productos */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    max-width: 1200px; /* Opcional: un ancho máximo */
+}
+
+#products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px; /* Añadir margen superior para separar del header */
+    overflow: auto;
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px; /* Asegúrate de que el ancho sea apropiado */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para mejor visibilidad */
+    border-radius: 8px; /* Esquinas redondeadas para mejorar la apariencia */
+}
+
+.product-item img {
+    width: 100px;
+    height: 100px;
+}
+
+.product-item button {
+    background-color: #ff9900;
+    border: none;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.product-item button:hover {
+    background-color: #e68a00;
+}
+
+/* Estilos del footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
